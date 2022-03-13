@@ -1,3 +1,19 @@
+ * html body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/IMG_0993.JPG');
+  font-family: "Nunito";
+}
+a:link , a:visited {
+  color: white;
+}
+a:hover {
+  color: #3dd2ff;
+}
 .App {
   text-align: center;
 }
