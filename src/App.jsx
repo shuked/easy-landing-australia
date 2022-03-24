@@ -7,19 +7,26 @@ import AboutUS from './components/AboutUs'
 import OurProject from './components/OurProject'
 import Visa from './components/Visa'
 import ContactUS from './components/ConactUs'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div id="container">
       <Header />
-      <Welcome />
-      <AboutUS />
+      {/* <Welcome /> */}
+      <hr id="our-project"/>
       <OurProject />
+      <hr id="about-us"/>
+      <AboutUS />
+     
+      <hr id="visa"/>
       <Visa />
+      <hr id="contact-us"/>
       <ContactUS />
-    </>
+      <Footer />
+    </div>
   )
 }
 

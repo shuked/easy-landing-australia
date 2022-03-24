@@ -1,61 +1,94 @@
-import { useState } from 'react'
-import styled from 'styled-components'
-import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from "react";
+import styled from "styled-components";
+import MenuIcon from "@mui/icons-material/Menu";
 // import Menu from './Menu'
-import { Link as Scroll } from 'react-scroll'
-
-
+import { Link as Scroll } from "react-scroll";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 const HeaderContainer = styled.header`
-    background-color: rgba(0,0,0,0.5);
-    color: #ffffff;
-    position: sticky;
-    top: 0;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 20px;
-    height: 5vh;
-`
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+  /* position: sticky; */
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 10vw;
+  height: 5vh;
+  /* border-bottom: 1px solid #aaa; */
+`;
 const Logo = styled.h1`
-    flex-grow: 5;
-    cursor: pointer;
-`
+  font-size: 1.5vw;
+  flex-grow: 5;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 1vw;
+`;
 
 const Menu = styled.menu`
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-grow: 2;
+`;
+const MenuItem = styled.div`
+  cursor: pointer;
+`;
 
-`
+const HeaderSocial = styled.aside`
+  display: flex;
+  justify-content: space-around;
+`;
 
 function Header() {
-
   return (
-    <HeaderContainer >
-        <Logo>
-            <Scroll to="welcome" smooth= "true">
-                Easy Landing Australia
-            </Scroll>
-        </Logo>
-        {/* <Menu /> */}
-        <Menu>
-            <Scroll to="about-us">
-                About Us
-            </Scroll>
-            <Scroll to="our-project">
-                Our Project
-            </Scroll>
-            <Scroll to="visa">
-                Visa
-            </Scroll>
-            <Scroll to="contact-us">
-                Contact Us
-            </Scroll>
-        </Menu>
-        
+    <HeaderContainer>
+      <Logo>
+        <Scroll to="container" smooth="true">
+          EASY LANDING AUSTRALIA
+        </Scroll>
+      </Logo>
+      {/* <Menu /> */}
+      <Menu>
+        <MenuItem>
+          <Scroll to="about-us" smooth="true">
+            About Us
+          </Scroll>
+        </MenuItem>
+        <MenuItem>
+          <Scroll to="our-project" smooth="true">
+            Our Project
+          </Scroll>
+        </MenuItem>
+        <MenuItem>
+          <Scroll to="visa" smooth="true">
+            Visa
+          </Scroll>
+        </MenuItem>
+
+        <MenuItem>
+          <Scroll to="contact-us" smooth="true">
+            Contact Us
+          </Scroll>
+        </MenuItem>
+
+        <MenuItem>
+        <a href="https://www.instagram.com/easy_landing_australia/">
+            <InstagramIcon sx={{ fontSize: "1vw" }} />
+          </a>
+        </MenuItem>
+
+        <MenuItem>
+        <a href="https://wa.me/614688917354">
+            <WhatsAppIcon sx={{ fontSize: "1vw" }} />
+          </a>
+        </MenuItem>
+
+      </Menu>
     </HeaderContainer>
-  )
+  );
 }
 
-export default Header
+export default Header;
