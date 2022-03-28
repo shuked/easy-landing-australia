@@ -6,6 +6,7 @@ const ContactUSContainer = styled.div`
     margin: 3vw;
     color: #000;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0.5vw 5vw;
@@ -13,6 +14,7 @@ const ContactUSContainer = styled.div`
     margin-top: 5vw;
     @media (max-width: 1080px) {
     justify-content: center;
+    min-height: 100vh;
         
     }
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
@@ -41,6 +43,7 @@ const SideImage = styled.img`
 function ContactUS() {
     return (
         <ContactUSContainer>
+            <h1>Contact Us</h1>
             <ContactUsForm action="">
                 <TextField
                     id="standard-basic"

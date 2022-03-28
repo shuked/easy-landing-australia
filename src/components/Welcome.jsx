@@ -2,6 +2,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link as Scroll } from "react-scroll";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 
 
@@ -71,6 +73,15 @@ function Welcome() {
         <Scroll to="contact-us" smooth="true">
           <MenuItem>Contact Us</MenuItem>
         </Scroll>
+        <MenuItem>
+        <a href="https://www.instagram.com/easy_landing_australia/">
+            <InstagramIcon  />
+          </a>
+          {" "}
+          <a href="https://wa.me/614688917354">
+            <WhatsAppIcon  />
+          </a>
+        </MenuItem>
 
       </WelcomeMenu>
       <SideImage src="https://wallpaper.dog/large/635907.jpg" alt="" />
