@@ -25,7 +25,7 @@ const ContactUsForm = styled.form`
     width: 50vw;
     flex-wrap: wrap;
     @media (max-width: 1080px) {
-    width: 80%;
+        width: 90%;
     }
 `;
 const SideImage = styled.img`
