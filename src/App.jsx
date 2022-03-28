@@ -15,7 +15,8 @@ function App() {
   return (
     <div id="container">
       <Header />
-      {/* <Welcome /> */}
+      <hr />
+      <Welcome />
       <hr id="our-project"/>
       <OurProject />
       <hr id="about-us"/>

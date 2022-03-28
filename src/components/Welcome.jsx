@@ -4,13 +4,19 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link as Scroll } from "react-scroll";
 
 
+
 const WelcomeContainer = styled.div`
   margin: 3vw;
   /* background-color: rgba(0,0,0,0.3); */
   /* color: #ffffff; */
-  display: flex;
-  height: 80vh;
+  display: none;
+  flex-direction: column;
+  min-height: 80vh;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
+  @media (max-width: 1080px) {
+  display: flex;
+  }
+  
 `;
 const WelcomeContent = styled.h1`
   font-size: 3rem;
@@ -32,24 +38,32 @@ const MenuItem = styled.h1`
   /* &:hover {
     color: #AAA;
   } */
+  @media (max-width: 1080px) {
+    font-size: 5vw;
+  }
 `;
+const SideImage = styled.img`
+
+    margin: 2vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    
+`;
+
 
 function Welcome() {
   return (
       
     <WelcomeContainer id="welcome">
-        <WelcomeContent>
-        <h1>ICON</h1>
-        <Scroll to="about-us" smooth="true">
-          <KeyboardArrowDownIcon sx={{ fontSize: "7rem", cursor: "pointer" }} />
-        </Scroll>
-      </WelcomeContent>
+        {/* <WelcomeContent>
+        
+      </WelcomeContent> */}
       <WelcomeMenu>
-        <Scroll to="about-us" smooth="true">
-          <MenuItem>About Us</MenuItem>
-        </Scroll>
+        
         <Scroll to="our-project" smooth="true">
           <MenuItem>Our Project</MenuItem>
+        </Scroll>
+        <Scroll to="about-us" smooth="true">
+          <MenuItem>About Us</MenuItem>
         </Scroll>
         <Scroll to="visa" smooth="true">
           <MenuItem>Visa 462</MenuItem>
@@ -57,9 +71,9 @@ function Welcome() {
         <Scroll to="contact-us" smooth="true">
           <MenuItem>Contact Us</MenuItem>
         </Scroll>
-        
-      </WelcomeMenu>
 
+      </WelcomeMenu>
+      <SideImage src="https://wallpaper.dog/large/635907.jpg" alt="" />
       
     </WelcomeContainer>
   );

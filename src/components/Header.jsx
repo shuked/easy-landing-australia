@@ -6,6 +6,7 @@ import { Link as Scroll } from "react-scroll";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import PopupMenu from "./header/PopupMenu";
 
 const HeaderContainer = styled.header`
   background-color: rgba(255, 255, 255, 1);
@@ -25,13 +26,22 @@ const Logo = styled.h1`
   cursor: pointer;
   display: inline-block;
   margin-left: 1vw;
+  @media (max-width: 1080px) {
+    font-size: 4vw;
+        
+    }
 `;
+
 
 const Menu = styled.menu`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-grow: 2;
+  @media (max-width: 1080px) {
+        display: none;
+        
+    }
 `;
 const MenuItem = styled.div`
   cursor: pointer;
