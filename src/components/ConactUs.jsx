@@ -43,7 +43,7 @@ const SideImage = styled.img`
 function ContactUS() {
     return (
         <ContactUSContainer>
-            <h1>Contact Us</h1>
+            <h1>CONTACT US</h1>
             <ContactUsForm action="">
                 <TextField
                     id="standard-basic"
