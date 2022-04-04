@@ -59,6 +59,7 @@ function Welcome() {
         {/* <WelcomeContent>
         
       </WelcomeContent> */}
+      <hr />
       <WelcomeMenu>
         
         <Scroll to="our-project" smooth="true">

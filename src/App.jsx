@@ -15,7 +15,7 @@ function App() {
   return (
     <div id="container">
       <Header />
-      <hr />
+      
       <Welcome />
       <hr id="our-project"/>
       <OurProject />
@@ -26,7 +26,7 @@ function App() {
       <Visa />
       <hr id="contact-us"/>
       <ContactUS />
-      {/* <Footer /> */}
+     
     </div>
   )
 }

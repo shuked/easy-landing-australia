@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const AboutUSContainer = styled.div`
+const PageContainer = styled.div`
     margin: 3vw;
     color: #000;
     display: flex;
@@ -38,15 +38,15 @@ const MainContent = styled.div`
     }
 `;
 
-function AboutUS() {
+function Page() {
     return (
-        <AboutUSContainer>
+        <PageContainer>
             <MainContent>
                 
             </MainContent>
             <SideImage/>
-        </AboutUSContainer>
+        </PageContainer>
     );
 }
 
-export default AboutUS;
+export {PageContainer, SideImage , MainContent}
