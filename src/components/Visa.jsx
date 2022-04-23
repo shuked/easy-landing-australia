@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as React from 'react';
 import { styled as styles } from '@mui/material/styles';
-import { PageContainer , SideImage , MainContent } from "./global/Page"
+import { PageContainer , SideImage , MainContent ,PageTitle } from "./global/Page"
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -47,7 +47,7 @@ function Visa() {
 			/>
 
 			<MainContent>
-				<h1>WORKING HOLIDAY VISA </h1>
+				<PageTitle>WORKING HOLIDAY VISA </PageTitle>
 				<p>
 					אוסטרליה מאפשרת לנו בעלי דרכון ישראלי לקבל ויזת עבודה וחופשה
 					לשנה שלמה, ויזה שמאפשרת לנו לטייל ולעבוד חוקית במדינה!
@@ -70,7 +70,7 @@ function Visa() {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <ExpandMoreIcon color="primary" />
         </ExpandMore></Title2>
                
 				<Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -101,15 +101,12 @@ function Visa() {
 
 				
 				<p>
-					{" "}
+					{" "}<b>
 					אנו מציעים כחלק מתהליך הליווי בדיקה חינמית להגשת הבקשה
 					לויזה.
-				</p>
-				<p>
-					{" "}
-					<b>
-						שלחו לנו הודעה בוואטסאפ או אינסטגרם ותקבלו את כל הפרטים
-						המלאים.
+					<br />
+					
+						השאירו לנו פרטים למטה ונחזור אליכם .
 					</b>
 				</p>
 			</MainContent>

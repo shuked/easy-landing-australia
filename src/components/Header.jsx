@@ -18,6 +18,12 @@ const HeaderContainer = styled.header`
   align-items: center;
   padding: 1vw 10vw;
   height: 5vh;
+  @media (max-width: 1080px) {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    
+    }
   /* border-bottom: 1px solid #aaa; */
 `;
 const Logo = styled.h1`
@@ -28,7 +34,7 @@ const Logo = styled.h1`
   margin-left: 1vw;
   @media (max-width: 1080px) {
     font-size: 4vw;
-        
+    
     }
 `;
 

@@ -45,7 +45,7 @@ const MenuItem = styled.h1`
   }
 `;
 const SideImage = styled.img`
-
+    max-height: 350px ;
     margin: 2vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     
@@ -59,7 +59,7 @@ function Welcome() {
         {/* <WelcomeContent>
         
       </WelcomeContent> */}
-      <hr />
+      
       <WelcomeMenu>
         
         <Scroll to="our-project" smooth="true">

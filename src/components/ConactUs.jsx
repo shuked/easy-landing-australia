@@ -12,7 +12,7 @@ const ContactUsForm = styled.form`
     /* align-items: flex-start; */
     width: 50vw;
     flex-wrap: wrap;
-    @media (max-width: 1080px) {
+    @media (max-width: 1024px) {
         width: 90%;
     }
 `;
