@@ -98,7 +98,8 @@ function Visa() {
 				</ListAlignRight>
 					</CardContent>
 				</Collapse>
-
+				
+				<br /><br /><br />
 				
 				<p>
 					{" "}<b>

@@ -42,6 +42,13 @@ const PageTitle = styled.h1`
     margin: 1vh;
     
 `;
+
+const Paragraph = styled.p`
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    
+`;
+
 function Page() {
     return (
         <PageContainer>
@@ -53,4 +60,4 @@ function Page() {
     );
 }
 
-export {PageContainer, SideImage , MainContent, PageTitle}
+export {PageContainer, SideImage , MainContent, PageTitle, Paragraph}
