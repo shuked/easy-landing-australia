@@ -1,32 +1,30 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import Preloader from './components/Preloader'
 import Header from './components/Header'
-import Welcome from './components/Welcome'
-import AboutUS from './components/AboutUs'
+import Hero from './components/Hero'
 import OurProject from './components/OurProject'
-import Visa from './components/Visa'
-import ContactUS from './components/ConactUs'
+import Pricing from './components/Pricing'
+import Contact from './components/Contact'
+import Download from './components/Download'
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div id="container">
+      {/* <Preloader /> */}
       <Header />
-      
-      <Welcome />
-      <hr id="our-project"/>
+      <Hero />
       <OurProject />
-      <hr id="about-us"/>
-      <AboutUS />
-     
-      <hr id="visa"/>
-      <Visa />
-      <hr id="contact-us"/>
-      <ContactUS />
-     
+      <Pricing />
+      <Contact />
+      <Download />
+      <Footer />
+      <BackToTop />
     </div>
   )
 }

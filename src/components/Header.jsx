@@ -1,110 +1,63 @@
-import { useState } from "react";
-import styled from "styled-components";
-import MenuIcon from "@mui/icons-material/Menu";
-// import Menu from './Menu'
-import { Link as Scroll } from "react-scroll";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import PopupMenu from "./header/PopupMenu";
-
-const HeaderContainer = styled.header`
-  background-color: rgba(255, 255, 255, 1);
-  color: #000;
-  /* position: sticky; */
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw 10vw;
-  height: 5vh;
-  @media (max-width: 1080px) {
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    
-    }
-  /* border-bottom: 1px solid #aaa; */
-`;
-const Logo = styled.h1`
-  font-size: 1.5vw;
-  flex-grow: 5;
-  cursor: pointer;
-  display: inline-block;
-  margin-left: 1vw;
-  @media (max-width: 1080px) {
-    font-size: 4vw;
-    
-    }
-`;
-
-
-const Menu = styled.menu`
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-grow: 2;
-  @media (max-width: 1080px) {
-        display: none;
-        
-    }
-`;
-const MenuItem = styled.div`
-  cursor: pointer;
-`;
-
-const HeaderSocial = styled.aside`
-  display: flex;
-  justify-content: space-around;
-`;
+import Logo from '../assets/images/logo.svg'
 
 function Header() {
-  return (
-    <HeaderContainer>
-      <Logo>
-        <Scroll to="container" smooth="true">
-          EASY LANDING AUSTRALIA
-        </Scroll>
-      </Logo>
-      {/* <Menu /> */}
-      <Menu>
-        <MenuItem>
-          <Scroll to="about-us" smooth="true">
-            About Us
-          </Scroll>
-        </MenuItem>
-        <MenuItem>
-          <Scroll to="our-project" smooth="true">
-            Our Project
-          </Scroll>
-        </MenuItem>
-        <MenuItem>
-          <Scroll to="visa" smooth="true">
-            Visa
-          </Scroll>
-        </MenuItem>
-
-        <MenuItem>
-          <Scroll to="contact-us" smooth="true">
-            Contact Us
-          </Scroll>
-        </MenuItem>
-
-        <MenuItem>
-        <a href="https://www.instagram.com/easy_landing_australia/">
-            <InstagramIcon sx={{ fontSize: "1vw" }} />
-          </a>
-        </MenuItem>
-
-        <MenuItem>
-        <a href="https://wa.me/614688917354">
-            <WhatsAppIcon sx={{ fontSize: "1vw" }} />
-          </a>
-        </MenuItem>
-
-      </Menu>
-    </HeaderContainer>
-  );
-}
-
-export default Header;
+    return (
+        <header className="header_area">
+        <div id="header_navbar" className="header_navbar">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <nav className="navbar navbar-expand-lg">
+                  <a className="navbar-brand" href="index.html">
+                    <img id="logo" src={Logo} alt="Logo" />
+                  </a>
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span className="toggler-icon"> </span>
+                    <span className="toggler-icon"> </span>
+                    <span className="toggler-icon"> </span>
+                  </button>
+                  <div
+                    className="collapse navbar-collapse sub-menu-bar"
+                    id="navbarSupportedContent"
+                  >
+                    <ul id="nav" className="navbar-nav ms-auto">
+                      <li className="nav-item">
+                        <a className="page-scroll active" href="#home">Home</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="page-scroll" href="#how-work">Our Project</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="page-scroll" href="#pricing">Pricing</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="page-scroll" href="#contact">VISA</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="page-scroll" href="#download">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </nav>
+               
+              </div>
+            </div>
+           
+          </div>
+          
+        </div>
+       
+      </header>
+    )
+  }
+  
+  export default Header
