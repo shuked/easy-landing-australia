@@ -13,7 +13,10 @@ function Hero() {
 				<div className="row align-items-center">
 					<div className="col-xl-6 col-lg-6">
 						<div className="hero-content">
-							<h2 className="wow fadeInUp text-center" data-wow-delay=".2s">
+							<h2
+								className="wow fadeInUp text-center"
+								data-wow-delay=".2s"
+							>
 								Easy Landing Australia
 							</h2>
 							<p
@@ -25,13 +28,12 @@ function Hero() {
 								לעשות נחיתה רכה במדינה הכי מטורפת על הכדור!
 								החלטנו להקים מיזם שבו נלווה אתכם בכל הקשור
 								לאוסטרליה.
-                <br />
-                להעביר את החיים שלך למדינה חדשה ושונה יכול
+								<br />
+								להעביר את החיים שלך למדינה חדשה ושונה יכול
 								להתקיל ולהלחיץ, תפקידנו להפיג את החשש ולהיות
 								איתך 24/7 לכל שאלה.{" "}
 							</p>
-							
-							
+
 							<p
 								dir="rtl"
 								className="wow fadeInUp"
@@ -39,17 +41,17 @@ function Hero() {
 							>
 								וכולל הגשת בקשה לויזה, כיצד מוצאים טיסות במחירים
 								משתלמים, ולביטוחים במדינה זרה.
-                <br />
-                כיצד להתחיל את החיים כאן אם זה במציאת בנק מתאים
+								<br />
+								כיצד להתחיל את החיים כאן אם זה במציאת בנק מתאים
 								וחברת סלולר. מה חשוב לדעת לפני שקונים רכב? ואיך
 								עושים את זה.
-              <br />
+								<br />
 								גם בפאן המקצועי! איך למצוא עבודה ואיזה כרטיסי
 								עבודה צריך לכל מקצוע,ואיך אנחנו כותבים קורות
 								חיים לעבודה באוסטרליה.
 							</p>
 
-              <p
+							<p
 								dir="rtl"
 								className="wow fadeInUp"
 								data-wow-delay=".4s"
@@ -59,8 +61,7 @@ function Hero() {
 								ויעוץ בכל הקשור בנושאים שחשובים עם הנחיתה
 								באוסטרליה.
 							</p>
-							
-						
+
 							<div className="hero-btns">
 								<a
 									href="#pricing"
@@ -74,18 +75,17 @@ function Hero() {
 									className="watch-btn glightbox wow fadeInUp"
 									data-wow-delay=".5s"
 								>
-									<i className="lni lni-instagram-filled"> </i>
-                  <span></span>
-					
+									<i className="lni lni-instagram-filled">
+										{" "}
+									</i>
+									<span></span>
 								</a>
-                <a
-									href="javascript:void(0)"
+								<a
+									href="https://wa.me/62468917354"
 									className="watch-btn glightbox wow fadeInUp"
 									data-wow-delay=".5s"
 								>
-									
-                  <i class="lni lni-whatsapp"></i>
-                  
+									<i class="lni lni-whatsapp"></i>
 								</a>
 							</div>
 						</div>

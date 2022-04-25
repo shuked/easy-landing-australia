@@ -61,7 +61,7 @@ function OurProject() {
 												aria-controls="collapseOne"
 											>
 												<span className="d-inline-flex mb-0 icon-style gradient-1 ">
-													<i className="lni lni-user">
+													<i className="lni lni-control-panel">
 														{" "}
 													</i>
 												</span>
@@ -99,7 +99,7 @@ function OurProject() {
 												aria-controls="collapseTwo"
 											>
 												<span className="d-inline-flex mb-0 icon-style gradient-3">
-													<i className="lni lni-credit-cards">
+													<i className="lni lni-plane">
 														{" "}
 													</i>
 												</span>
@@ -138,7 +138,7 @@ function OurProject() {
 												aria-controls="collapseThree"
 											>
 												<span className="d-inline-flex mb-0 icon-style gradient-4">
-													<i className="lni lni-control-panel">
+													<i className="lni lni-phone">
 														{" "}
 													</i>
 												</span>
@@ -174,7 +174,7 @@ function OurProject() {
 												aria-controls="collapseFour"
 											>
 												<span className="d-inline-flex mb-0 icon-style gradient-1">
-													<i className="lni lni-user">
+													<i className="lni lni-coin">
 														{" "}
 													</i>
 												</span>
@@ -202,8 +202,12 @@ function OurProject() {
 								className="download-btn wow fadeInUp"
 								data-wow-delay=".5s"
 							>
-								<a href="#" className="main-btn btn-hover">
-									Download Now
+								<a
+									href="#pricing"
+									className="main-btn btn-hover wow fadeInUp"
+									data-wow-delay=".45s"
+								>
+									Purcahse Now
 								</a>
 							</div>
 						</div>

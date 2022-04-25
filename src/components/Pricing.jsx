@@ -7,7 +7,7 @@ function Pricing() {
           <div className="col-xl-6 col-lg-8 col-md-10 mx-auto">
             <div className="section-title text-center">
               <h2 className="mb-30 wow fadeInUp" data-wow-delay=".2s">
-                Pricing
+                Our Plans
               </h2>
               <p className="mb-50 wow fadeInUp" data-wow-delay=".4s">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -19,7 +19,7 @@ function Pricing() {
         <div className="row">
           <div className="col-12 mx-auto">
             <div className="pricing-nav">
-              <ul
+              {/* <ul
                 className="
                   nav nav-pills
                   justify-content-center
@@ -56,7 +56,7 @@ function Pricing() {
                     >Yearly</a
                   >
                 </li>
-              </ul>
+              </ul> */}
               <div className="tab-content" id="pills-tabContent">
                 <div
                   className="tab-pane fade price-tab show active"
@@ -81,28 +81,8 @@ function Pricing() {
                         <a
                           href="#"
                           className="btn-hover price-btn main-btn"
-                          >Buy Now</a
-                        >
-                      </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4 col-md-6">
-                      <div className="single-price text-center active">
-                        <div className="price-icon icon-style mx-auto gradient-2">
-                          <i className="lni lni-users"> </i>
-                        </div>
-                        <h4 className="package-name mb-20">החזר מיסים</h4>
-                        <h4 className="package-price mb-20">299₪</h4>
-                        <ul className="package-details">
-                          <li>איסוף תלושי שכר</li>
-                          <li>איסוף הוצאות מוכרות המ"ס</li>
-                          <li>הגשת הטפסים לרשויות המ"ס</li>
-                          
-                        </ul>
-                        <a
-                          href="#"
-                          className="btn-hover price-btn main-btn"
-                          >Buy Now</a
-                        >
+                          >Buy Now</a>
+                        
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-6">
@@ -127,8 +107,30 @@ function Pricing() {
                           className="btn-hover price-btn main-btn"
                           >Buy Now</a
                         >
+                        
                       </div>
                     </div>
+                    <div className="col-xl-4 col-lg-4 col-md-6">
+                      <div className="single-price text-center active">
+                        <div className="price-icon icon-style mx-auto gradient-2">
+                          <i className="lni lni-users"> </i>
+                        </div>
+                        <h4 className="package-name mb-20">החזר מיסים</h4>
+                        <h4 className="package-price mb-20">299₪</h4>
+                        <ul className="package-details">
+                          <li>איסוף תלושי שכר</li>
+                          <li>איסוף הוצאות מוכרות המ"ס</li>
+                          <li>הגשת הטפסים לרשויות המ"ס</li>
+                          
+                        </ul>
+                        <a
+                          href="#"
+                          className="btn-hover price-btn main-btn"
+                          >Buy Now</a
+                        >
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
                 <div
