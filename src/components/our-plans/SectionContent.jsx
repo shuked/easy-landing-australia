@@ -1,6 +1,6 @@
-import NavPills from "./NavPills";
-import MonthlyPlans from "./MonthlyPlans";
-import YearlyPlans from "./YearlyPlans";
+import NavPills from "./section-content/NavPills";
+import MonthlyPlans from "./section-content/MonthlyPlans";
+import YearlyPlans from "./section-content/YearlyPlans";
 
 function SectionContent() {
 	return (

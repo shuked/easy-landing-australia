@@ -1,7 +1,7 @@
 import heroBackground from "../assets/images/hero-bg.png";
 
-import ContentSide from './hero/ContentSide'
-import ImgSide from './hero/ImgSide'
+import ContentSide from "./hero/ContentSide";
+import ImgSide from "./hero/ImgSide";
 
 function Hero() {
 	return (
@@ -13,7 +13,7 @@ function Hero() {
 			<div className="container">
 				<div className="row align-items-center">
 					<ContentSide />
-					<ImgSide />		
+					<ImgSide />
 				</div>
 			</div>
 		</section>

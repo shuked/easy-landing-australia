@@ -1,6 +1,5 @@
 import LogoImg from "../../assets/images/logo.svg";
 
-
 function Logo() {
 	return (
 		<a className="navbar-brand" href="index.html">

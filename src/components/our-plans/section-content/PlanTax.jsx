@@ -1,4 +1,4 @@
-import LogoImg from "../../assets/images/logo.svg";
+import LogoImg from "../../../assets/images/logo.svg";
 
 function PlanTax() {
 	return (

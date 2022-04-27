@@ -10,7 +10,7 @@ function Header() {
 					<div className="row">
 						<div className="col-lg-12">
 							<nav className="navbar navbar-expand-lg">
-                <Logo />
+								<Logo />
 								<NavBarMobile />
 								<NavBar />
 							</nav>
